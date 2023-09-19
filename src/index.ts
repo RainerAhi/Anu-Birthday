@@ -125,7 +125,7 @@ async function setupViewer(){
 
         // Second to third
 
-        .to(position, {x: 5.5, y: 3.3, z: 0.47,
+        .to(position, {x: isMobile ? -4.88 : -4, y: isMobile ? 2.54 : 2.51, z: isMobile ? 4.66 : 5.57,
             scrollTrigger: {
                 trigger: ".third",
                 start:"top bottom",
@@ -141,7 +141,7 @@ async function setupViewer(){
             immediateRender: false
         }})
 
-        .to(target, {x: -0.2, y: -0.41 , z: 1,
+        .to(target, {x: isMobile ? -0.68 : -0.19, y:  isMobile ? 0.635 : 0.61 , z: isMobile ? 0.57 : 1.49,
             scrollTrigger: {
                 trigger: ".third",
                 start:"top bottom",
@@ -151,7 +151,7 @@ async function setupViewer(){
 
                 // Third to forth
 
-                .to(position, {x: -4.25, y: 3, z: -3.9,
+                .to(position, {x: isMobile ? -0.73 : 0.37, y: isMobile ? 6.9 : 6.9, z: isMobile ? 1.5 : 2,
                     scrollTrigger: {
                         trigger: ".forth",
                         start:"top bottom",
@@ -167,7 +167,7 @@ async function setupViewer(){
                     immediateRender: false
                 }})
         
-                .to(target, {x: -1.2, y: 0.38 , z: -0.13,
+                .to(target, {x: isMobile ? -0.0165 : 1.08, y: isMobile ? 0.979 : 0.98 , z: isMobile ? -0.03 : 0.465,
                     scrollTrigger: {
                         trigger: ".forth",
                         start:"top bottom",
